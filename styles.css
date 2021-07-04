@@ -144,7 +144,7 @@ img {
   padding: 1.5rem;
   margin: 10% auto;
   width: 85%;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2), 0px 7px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 15px rgba(0, 0, 0, 0.2);
   animation-name: modal-1;
   animation-duration: 1.5s;
 }
@@ -227,7 +227,7 @@ img {
   color: #ca1313;
 }
 
-/* Work style*/
+/* Work style */
 .my-work {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -247,7 +247,7 @@ img {
 .project-link {
   display: inline;
   margin-left: 1rem;
-  background-color:  #ca1313;
+  background-color: #ca1313;
   padding: 0.5rem 0.5rem;
   font-size: 1rem;
   margin-top: 1rem;
@@ -255,16 +255,15 @@ img {
 }
 
 .project-link:hover {
-  background-color:  #a10d0d;
+  background-color: #a10d0d;
 }
-
-
 
 /* Animation */
 @keyframes modal-1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -274,14 +273,14 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 /* Media querry */
-
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal-1-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -291,11 +290,11 @@ img {
   }
 }
 
-
 @media (min-width: 880px) {
   .brand {
     font-size: 3rem;
   }
+
   .nav-items {
     margin-right: 3rem;
     font-size: 1.3rem;
@@ -336,10 +335,4 @@ img {
     height: 50%;
     border-radius: 5%;
   }
-
-  .span-2 {
-    grid-row: span / 1;
-  }
 }
-
-
