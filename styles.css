@@ -115,15 +115,17 @@ img {
   padding: 1rem 2rem;
   margin-bottom: 4rem;
   margin-top: 1rem;
-  background-color: #ca1313;
   outline: none;
-  border: none;
-  color: #fff;
   font-size: 1.5rem;
+  transition: 0.5s;
+  background-color: #f1f1f1;
+  border: 1px solid #ca1313;
+  color: #ca1313;
 }
 
 .btn:hover {
-  background-color: #a10d0d;
+  background-color: #ca1313;
+  color: #f1f1f1;
 }
 
 /* Modal style */
@@ -162,7 +164,6 @@ img {
 
 .modal-bio-img {
   border-radius: 3%;
-  border: 3px solid #ca1313;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -196,7 +197,7 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 6;
   overflow-x: hidden;
-  animation-name: sideMenu;
+  animation-name: side-menu;
   animation-delay: 1s;
 }
 
@@ -252,10 +253,79 @@ img {
   font-size: 1rem;
   margin-top: 1rem;
   text-align: center;
+  transition: 0.5s;
 }
 
 .project-link:hover {
   background-color: #a10d0d;
+}
+
+/* Contact */
+.contact-me {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  width: 90%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.contact-me h1 {
+  padding: 1rem;
+}
+
+.form-one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-one input {
+  height: 40px;
+  padding: 1rem;
+  cursor: text;
+  border: 1px solid transparent;
+}
+
+.form-one textarea {
+  padding: 1rem;
+  cursor: text;
+  border: 1px solid transparent;
+}
+
+.form-one textarea:hover,
+.form-one textarea:focus,
+.form-one input:hover,
+.form-one input:focus {
+  outline: none;
+  border: 1px solid #ca1313;
+}
+
+/* Footer */
+.main-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-link {
+  color: #ca1313;
+  transition: 0.5s;
+}
+
+.footer-link:hover {
+  color: #a10d0d;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2rem;
+}
+
+.footer-list {
+  margin-right: 3rem;
 }
 
 /* Animation */
@@ -269,7 +339,7 @@ img {
   }
 }
 
-@keyframes sideMenu {
+@keyframes side-menu {
   from {
     opacity: 0;
   }
